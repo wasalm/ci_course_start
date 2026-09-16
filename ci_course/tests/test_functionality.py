@@ -16,3 +16,6 @@ def test_minimum():
     assert ci_course.minimum(1, 2, 3) == 1
     assert ci_course.minimum(1.2, 2.3) == 1.2
     assert ci_course.minimum(-1.2, -3) == -3
+
+def test_minimum_type():
+    assert ci_course.minimum("") == None
