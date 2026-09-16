@@ -20,7 +20,7 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest --cov-config=.coveragerc --cov=./ci_course --cov-report=xml
+        run: pytest --cov-branch --cov-config=.coveragerc --cov=./ci_course --cov-report=xml
         
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
