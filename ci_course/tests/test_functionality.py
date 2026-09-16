@@ -19,3 +19,4 @@ def test_minimum():
 
 def test_minimum_type():
     assert ci_course.minimum("") is None
+    assert ci_course.minimum(1, "") == 1
